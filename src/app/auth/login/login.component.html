@@ -1,0 +1,60 @@
+<div>
+  <img [src]="homeBanner" id="background">
+  <nav class="navbar text-center">
+    <img [src]="lmcLogo" id="lmc-logo">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">CORE FEATURES</a>
+    <a href="#">SOLUTIONS</a>
+    <a href="#">WHAT'S NEW</a>
+    <a href="#">CONTACT US</a>
+
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="login-text">
+          <h4>Learning Experience. Simplified.</h4>
+          <br>
+          <p><img width="20px" [src]="whiteCheck" />Easily
+            access stored data.</p>
+          <p><img width="20px" [src]="whiteCheck" />Customize
+            your learning path.</p>
+          <p><img width="20px" [src]="whiteCheck" />Manage
+            your courses for users and team.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <form [formGroup]="loginForm" (ngSubmit)="onSignin()">
+              <p id="card-header-text">Sign in to your <strong>MedSpecialized</strong> Learning Management Center</p>
+              <div id="input_container">
+                <input type="email" class="input_style" value placeholder="E-mail Address" formControlName="email">
+                <img [src]="emailIcon" id="input_img">
+              </div>
+              <div id="input_container">
+                <input class="input_style" value placeholder="Password" formControlName="password"
+                  [type]="passwordFieldType ? 'text' : 'password'">
+                <img [src]="passwordIcon" id="input_img">
+                <img [src]="viewIcon" id="view_img" (click)="viewPassword()">
+              </div>
+              <button class="btn btn-primary btn-block" id="login-btn" [disabled]="!loginForm.valid">Sign in</button>
+              <div class="forgot-pass">
+                <p class="text-center"><small>Forgot your password?</small></p>
+              </div>
+              <div class="separator">or</div>
+              <div class="social-buttons text-center">
+                <button class="btn" type="button"><img [src]="googleLogo" width="24">Sign in with
+                  Gmail</button><br>
+                <button class="btn" type="button"><img [src]="memLogo" width="24">Sign in with
+                  MEM</button>
+              </div>
+              <p class="text-center">Back</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

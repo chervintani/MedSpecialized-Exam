@@ -1,0 +1,64 @@
+<div>
+  <div class="col">
+    <div class="row">
+      <div class="col mt-3">
+        <h3 class="float-left">Users</h3>
+        <button class="btn btn-success float-right">
+          <fa-icon [icon]="faPlus" class="mr-2"></fa-icon>Invite User
+        </button>
+      </div>
+    </div>
+    <hr>
+    <div class="row mt-3 mb-3">
+      <div class="col-md-2">
+        <div id="input_container">
+          <select class="form-control" id="input">
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div id="input_container">
+          <input type="email" id="input" value placeholder="E-mail Address">
+          <fa-icon [icon]="faSearch" id="icon"></fa-icon>
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td scope="col">Email</td>
+          <td scope="col">Name</td>
+          <td scope="col">Status</td>
+          <td scope="col">Role</td>
+          <td scope="col">View</td>
+          <td scope="col">Update</td>
+          <td scope="col">Delete</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td><img [src]="userImg" width="40" class="mr-3" />{{user.email}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.status}}</td>
+          <td>{{user.role}}</td>
+          <td>
+            <img [src]="viewImg" width="40" />
+          </td>
+          <td>
+            <img [src]="editImg" width="20" class="mt-2" />
+          </td>
+          <td>
+            <img [src]="deleteImg" width="20" class="mt-2" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between p-2">
+      <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize"
+        (pageChange)="refreshUsers()">
+      </ngb-pagination>
+    </div>
+  </div>
+</div>

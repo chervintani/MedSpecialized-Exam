@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+  <div class="w3-sidebar w3-bar-block" id="side-bar">
+    <div class="sidebar-header text-center">
+      <img [src]="imsLogo" id="ims_logo">
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-3 align-center">
+        <img [src]="userLogo" width="60" id="admin-logo" />
+      </div>
+      <div class="col align-left" id="admin-name">
+        <p style="margin: 0">Admin 1 Sample</p>
+        <small>Admin</small>
+      </div>
+    </div>
+    <ng-container *ngFor="let tab of tabs">
+      <div [ngClass]="tab.name==='Users'?'active':''">
+        <a class="w3-bar-item w3-button pl-4 pt-3">
+          <fa-icon [icon]="tab.icon"></fa-icon>
+          {{tab.name}}
+          <span *ngIf="tab.name==='Users'" class="caret left"></span>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+
+  <div id="main">
+    <div class="topnav">
+      <div class="topnav-right">
+        <a>
+          <fa-icon [icon]="faExchange"></fa-icon>
+        </a>
+        <a class="mt-1">Switch to Trainee</a>
+        <a>
+          <fa-icon [icon]="faBell"></fa-icon>
+        </a>
+        <a (click)="logout()" class="mr-2">
+          <fa-icon [icon]="faSignOutAlt"></fa-icon>
+        </a>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</body>

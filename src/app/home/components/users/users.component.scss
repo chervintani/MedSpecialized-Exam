@@ -1,0 +1,40 @@
+$primary-blue: #719ece;
+
+#input_container {
+  position: relative;
+  padding: 0;
+  margin-bottom: 18px;
+}
+#input {
+  margin: 0;
+  padding: 0 40px 0 5px;
+  width: auto;
+  border-radius: 5px;
+  height: 40px;
+  border: 2px solid #bdbac2;
+  width: 100%;
+}
+#icon {
+  position: absolute;
+  width: 30px;
+  right: 0;
+  margin-top: 8px;
+  color: $primary-blue;
+  cursor: pointer;
+}
+#input:focus {
+  outline: none !important;
+  border: 2px solid $primary-blue;
+  box-shadow: 0 0 10px $primary-blue;
+  border-radius: 5px;
+}
+
+thead tr{
+  height: 10px;
+  background-color: $primary-blue;
+  color: white;
+}
+
+td img{
+  cursor: pointer;
+}

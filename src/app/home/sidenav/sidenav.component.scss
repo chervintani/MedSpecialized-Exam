@@ -1,0 +1,69 @@
+$primary-blue: #5086c6;
+
+#main {
+  margin-left: 15%;
+
+  .topnav {
+    background-color: $primary-blue;
+    overflow: hidden;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav-right {
+    float: right;
+    cursor: pointer;
+
+    fa-icon {
+      font-size: 20px;
+    }
+  }
+}
+
+#side-bar {
+  background-color: #1d2027;
+  color: #f7fcf5;
+  overflow: hidden;
+  width: 15%;
+
+  .sidebar-header {
+    #ims_logo {
+      filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 255, 255));
+      height: 100px;
+      text-align: center;
+    }
+  }
+
+  #admin-logo {
+    margin-left: 40%;
+  }
+  #admin-name {
+    margin-left: 7%;
+  }
+  a {
+    text-decoration: none;
+    height: 50px;
+  }
+}
+
+fa-icon {
+  margin-right: 10%;
+}
+
+.active {
+  background-color: $primary-blue;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-right: -16px;
+  margin-bottom: 15px;
+  border: 15px solid transparent;
+  border-right-color: white;
+}

@@ -1,0 +1,146 @@
+$base-color: #5086c6;
+$input-color: #719ece;
+$card-text-color: #4c4f53;
+
+.navbar {
+  background-image: linear-gradient(to right, #313131, #507bab);
+  opacity: 0.8;
+  height: 80px;
+  padding: 0 20% 0 20%;
+
+  a {
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #lmc-logo {
+    height: 50px;
+    width: auto;
+  }
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  filter: brightness(50%);
+}
+
+.container {
+  .login-text {
+    margin-top: 30%;
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  h4,
+  p {
+    color: rgb(233, 233, 233);
+    font-weight: normal;
+  }
+
+  #checked_white {
+    height: 60px;
+    width: 60px;
+  }
+
+  .card {
+    margin: 8% 0 0 40%;
+    border-top: 8px solid $base-color;
+    width: 70%;
+
+    p {
+      color: $card-text-color;
+    }
+    #card-header-text {
+      color: $card-text-color;
+      padding: 0 16% 0 16%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    #input_container {
+      position: relative;
+      padding: 0;
+      margin-bottom: 18px;
+    }
+    #input_img {
+      position: absolute;
+      left: 10px;
+      width: 23px;
+      height: auto;
+      margin-top: 6px;
+    }
+    #view_img {
+      position: absolute;
+      width: 40px;
+      right: 3px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+    .input_style {
+      margin: 0;
+      padding: 0 40px 0 45px;
+      border-radius: 5px;
+      height: 40px;
+      border: 2px solid #bdbac2;
+      width: 100%;
+    }
+    .input_style:focus {
+      outline: none !important;
+      border: 2px solid $input-color;
+      box-shadow: 0 0 10px $input-color;
+      border-radius: 5px;
+    }
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited {
+      background-color: $base-color !important;
+      border: 1.5px solid $base-color;
+    }
+    .forgot-pass {
+      margin: 6% 0 18% 0;
+    }
+
+    .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: $card-text-color;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid $card-text-color;
+    }
+
+    .separator:not(:empty)::before {
+      margin-right: 0.25em;
+    }
+
+    .separator:not(:empty)::after {
+      margin-left: 0.25em;
+    }
+
+    .social-buttons {
+      margin-bottom: 10%;
+      img {
+        margin-right: 25px;
+      }
+      button {
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-top: 18px;
+      }
+      .btn,
+      .btn:hover,
+      .btn:active,
+      .btn:visited {
+        border: 2px solid #d5d2da;
+      }
+    }
+  }
+}
