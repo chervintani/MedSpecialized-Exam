@@ -4,7 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Setting up the project
 
-Clone this project, then run `npm install` to install project dependencies.
+To clone this project, run `git clone https://github.com/chervintani/Medspecialized-Exam.git`.
+
+Run `npm install` to install project dependencies.
 
 Run `npm start` and wait for the project to compile successfully.
 
@@ -13,8 +15,8 @@ Navigate to `http://localhost:4200/`.
 ***
 
 <dl>
-  <dt>Credentials</dt>
+  <b>Credentials</b>
 
-  <dd>Email: <b>admin@meditab.com</b></dd>
-  <dd>Password: <b>pass</b></dd>
+  <dd>Email: <dt>admin@meditab.com</dt></dd>
+  <dd>Password: <dt>pass</dt></dd>
 </dl>

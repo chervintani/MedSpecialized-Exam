@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -39,7 +40,7 @@ export class LoginComponent implements OnInit {
     let email = this.loginForm.value.email;
     let password = this.loginForm.value.password;
 
-    if (email === 'admin@meditab.com' && password === 'pass') {
+    if (email === environment.EMAIL && password === environment.PASSWORD) {
       localStorage.setItem('authenticated', 'true');
       return this.router.navigate(['home/users']);
     }
