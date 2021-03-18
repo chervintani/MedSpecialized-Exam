@@ -13,7 +13,8 @@ Navigate to `http://localhost:4200/`.
 ***
 
 <dl>
-  <dt>Credential</dt>
+  <dt>Credentials</dt>
+
   <dd>Email: <b>admin@meditab.com</b></dd>
   <dd>Password: <b>pass</b></dd>
 </dl>
