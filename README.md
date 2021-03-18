@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Setting up the project
 
-Pull this project, then run `npm install` to install project dependencies.
+Clone this project, then run `npm install` to install project dependencies.
 
 Run `npm start` and wait for the project to compile successfully.
 
